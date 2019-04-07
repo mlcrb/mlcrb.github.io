@@ -1,0 +1,193 @@
+@font-face {
+  font-family:"Minecraft";
+  src: url("assets/minecraft-font.ttf") format("truetype");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Minecraft, sans-serif;
+	background-image: url(assets/images/background.png);
+}
+
+.header-container {
+	margin: auto;
+  	width: 50%;
+  	text-align: center;
+}
+
+.contents {
+    background-image: url(assets/images/dirt-background.png);
+    margin: auto;
+    width: 20%;
+    min-width: 210px;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border: #fff 2px solid;
+}
+
+.link {
+    color: #fff;
+}
+
+.link:hover {
+    color: #ffff00;
+}
+
+.header-container > *, .contents-header {
+    color: #fff;
+    text-shadow: 4px 4px 0 #3f3f3f;
+    filter: dropshadow(color=#3f3f3f,offx=4,offy=4);
+}
+
+.button-back {
+    position: fixed;
+    right: 1em;
+    top: 1em;
+    z-index: 3;
+}
+
+.button-to-top {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    z-index: 3;
+}
+
+.grid-container {
+	margin: auto;
+  	width: 75%;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+  	grid-gap: 1em;
+}
+
+.grid-container-more-columns {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 1em;
+}
+
+.grid-container-less-columns {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 1em;
+}
+
+.grid-container > div {
+	margin: auto;
+  	text-align: center;
+}
+
+.mcui {
+    display: inline-block;
+    position: relative;
+    background-color: #c6c6c6;
+    border: 2px solid;
+    border-color: #dbdbdb #5b5b5b #5b5b5b #dbdbdb;
+    padding: 6px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
+}
+
+.crafting-table > *, .furnace > * {
+ 	display: inline-block;
+    vertical-align: top;
+}
+
+.crafting-table .mcui-row {
+    display: block;
+}
+
+.crafting-table > .mcui-arrow {
+    background: url(assets/images/arrow.png) no-repeat;
+    width: 32px;
+    height: 26px;
+    margin: 40px 4px 0;
+}
+
+.furnace > .mcui-arrow {
+    background: url(assets/images/white-arrow.png) no-repeat;
+    width: 44px;
+    height: 32px;
+    margin: 36px 18px 0 14px;
+}
+
+.mcui-fuel {
+    display: block;
+    background: url(assets/images/fire.png) no-repeat;
+    width: 36px;
+    height: 36px;
+}
+
+.crafting-table > .mcui-arrow-special {
+    background: url(assets/images/arrow.png) no-repeat;
+    width: 32px;
+    height: 26px;
+    margin: 22px 4px 0;
+}
+
+.mcui-output {
+    margin-top: 28px;
+}
+.mcui-output-special {
+    margin-top: 10px;
+}
+
+.slot {
+    position: relative;
+    display: inline-block;
+    background: #8b8b8b no-repeat center center / 32px 32px;
+    border: 2px solid;
+    border-color: #373737 #fff #fff #373737;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.slot-large {
+	padding: 8px;
+}
+
+.slot-amount {
+    position: absolute;
+    bottom: 13px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    filter: dropshadow(color=#3f3f3f,offx=2,offy=2);
+    z-index: 2;
+}
+
+.slot-amount.one-digit {
+	left: 22px;
+    
+}
+
+.slot-amount.two-digits {
+	left: 10px;
+}
+
+.slot-item > span {
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+	
+.sprite {
+    display: inline-block;
+    background-image:url(assets/images/spritesheet.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
