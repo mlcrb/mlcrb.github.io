@@ -17,13 +17,16 @@ body {
 }
 
 .contents {
+    position: absolute;
     background-image: url(assets/images/dirt-background.png);
-    margin: auto;
-    width: 20%;
-    min-width: 210px;
+    max-width: 400px;
+    min-width: 200px;
     text-align: center;
     padding: 10px 0 10px 0;
     border: #fff 2px solid;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .link {
@@ -38,6 +41,7 @@ body {
     color: #fff;
     text-shadow: 4px 4px 0 #3f3f3f;
     filter: dropshadow(color=#3f3f3f,offx=4,offy=4);
+    margin: 10px;
 }
 
 .button-back {
