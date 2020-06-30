@@ -168,6 +168,7 @@ body {
     text-shadow: 2px 2px 0 #3f3f3f;
     filter: dropshadow(color=#3f3f3f,offx=2,offy=2);
     z-index: 2;
+    pointer-events: none;
 }
 
 .slot-amount.one-digit {
