@@ -7,14 +7,15 @@ $('.sprite').hover(function() {
 			'background-color': 'rgba(16,0,17,0.9)',
 			'padding': '2px',
 			'box-shadow': '0 2px 0 rgba(16,0,17,0.95), 0 -2px 0 rgba(16,0,17,0.95), 2px 0 0 rgba(16,0,17,0.95), -2px 0 0 rgba(16,0,17,0.95)',
-			'border': '2px solid #210565'
+			'border': '2px solid #210565',
+			'line-height': '1.5'
 		});
 	switch(name) {
 		case 'Нити лозы':
 			$('#name').css('color', '#00aa00');
 			break;
 		case 'Устройство Возраждатель':
-			$('#name').html('<span style="color: #ffff55">Устройство</span><br><br><span style="color: #fff">Возраждатель</span>');
+			$('#name').html('<span style="color: #ffff55">Устройство</span><br><span style="color: #fff">Возраждатель</span>');
 			break;
 		case 'Смесь для выпечки печенья':
 			$('#name').css('color', '#55ff55');
@@ -32,7 +33,7 @@ $('.sprite').hover(function() {
 			$('#name').css('color', '#5555ff');
 			break;
 		case 'Железийный топор Эффективность II':
-			$('#name').html('<span style="color: #fff">Железийный топор</span><br><br><span style="color: #aaa">Эффективность II</span>');
+			$('#name').html('<span style="color: #fff">Железийный топор</span><br><span style="color: #aaa">Эффективность II</span>');
 			break;
 		case 'Заготовка под броню':
 			$('#name').css('color', '#55ff55');
