@@ -17,41 +17,28 @@ $('.sprite').hover(function() {
 		case 'Устройство Возраждатель':
 			$('#name').html('<span style="color: #ffff55">Устройство</span><br><span style="color: #fff">Возраждатель</span>');
 			break;
-		case 'Смесь для выпечки печенья':
-			$('#name').css('color', '#55ff55');
-			break;
 		case 'Смесь для выпечки пирога':
 			$('#name').css('color', '#55ffff');
-			break;
-		case 'Свекольный набор':
-			$('#name').css('color', '#55ff55');
-			break;
-		case 'Средний энергоосколок':
-			$('#name').css('color', '#55ff55');
-			break;
-		case 'Капля энергии':
-			$('#name').css('color', '#5555ff');
 			break;
 		case 'Железийный топор Эффективность II':
 			$('#name').html('<span style="color: #fff">Железийный топор</span><br><span style="color: #aaa">Эффективность II</span>');
 			break;
+		case 'Смесь для выпечки печенья':
 		case 'Заготовка под броню':
-			$('#name').css('color', '#55ff55');
-			break;
+		case 'Уплотнённый снег':
 		case 'Стальная заготовка под броню':
+		case 'Средний энергоосколок':
+		case 'Свекольный набор':
+		case 'Грибной набор':
 			$('#name').css('color', '#55ff55');
 			break;
 		case 'Деконструктор':
 			$('#name').css('color', '#ffff55');
 			break;
 		case 'Содалит':
-			$('#name').css('color', '#5555ff');
-			break;
 		case 'Содалитовый кристалл':
+		case 'Капля энергии':
 			$('#name').css('color', '#5555ff');
-			break;
-		case 'Уплотнённый снег':
-			$('#name').css('color', '#55ff55');
 			break;
 		default:
 			$('#name').css('color', '#fff');
