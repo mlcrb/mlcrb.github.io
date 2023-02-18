@@ -1,6 +1,6 @@
 @font-face {
-  font-family:"Minecraft";
-  src: url("assets/minecraft-font.ttf") format("truetype");
+    font-family:"Minecraft";
+    src: url("assets/minecraft-font.ttf") format("truetype");
 }
 
 body {
@@ -12,8 +12,8 @@ body {
 
 .header-container {
 	margin: auto;
-  	width: 50%;
-  	text-align: center;
+    width: 50%;
+    text-align: center;
 }
 
 .contents {
@@ -46,24 +46,24 @@ body {
 
 .button-back {
     position: fixed;
-    right: 1em;
-    top: 1em;
+    right: 6px;
+    top: 6px;
     z-index: 3;
 }
 
 .button-to-top {
     position: fixed;
-    right: 1em;
-    bottom: 1em;
+    right: 6px;
+    bottom: 6px;
     z-index: 3;
 }
 
 .grid-container {
-	margin: auto;
-  	width: 75%;
-	display: grid;
-	grid-template-columns: auto auto auto auto auto auto;
-  	grid-gap: 1em;
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 1em;
 }
 
 .grid-container-more-columns {
@@ -84,7 +84,7 @@ body {
 
 .grid-container > div {
 	margin: auto;
-  	text-align: center;
+    text-align: center;
 }
 
 .mcui {
@@ -100,7 +100,7 @@ body {
 }
 
 .crafting-table > *, .furnace > * {
- 	display: inline-block;
+    display: inline-block;
     vertical-align: top;
 }
 
