@@ -49,8 +49,21 @@ $('.sprite').hover(function() {
 });
 
 $(document).mousemove(function(e) {
-    $('#name').css({
-       left: e.pageX + 15,
-       top: e.pageY - 15
-    });
+	$('#name').css({
+		left: e.pageX + 15,
+		top: e.pageY - 15
+	});
 });
+
+function copyToClipboard(elem) {
+  let temp = $("<input>");
+  $("body").append(temp);
+  temp.val($(elem).text()).select();
+  document.execCommand("copy");
+  temp.remove();
+	let next = $(elem).next()
+	if (next.is(":hidden")) {
+		next.fadeIn(100);
+		setTimeout(function() {next.fadeOut()}, 2000);
+	}
+}

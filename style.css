@@ -196,3 +196,12 @@ body {
     height: 32px;
     vertical-align: middle;
 }
+
+#ip {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#ip:hover {
+    color: #ffff00;
+}
