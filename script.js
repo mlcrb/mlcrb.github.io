@@ -43,6 +43,9 @@ $('.sprite').hover(function() {
 		default:
 			$('#name').css('color', '#fff');
 			break;
+		case 'Ножницы Стальные ножницы Пальцы не совать':
+			$('#name').html('<span style="color: #fff">Ножницы</span><br><span style="color: #aaa">Стальные ножницы</span><br><span style="color: #aaa">Пальцы не совать</span>');
+			break;
 	}
 }, function() {
 	$('#name').remove();
