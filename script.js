@@ -70,3 +70,30 @@ function copyToClipboard(elem) {
 		setTimeout(function() {next.fadeOut()}, 2000);
 	}
 }
+
+$('.animated').hover(function() {
+	$(this).addClass('animated-pause');
+	}, function() {
+	$(this).removeClass('animated-pause');
+});
+
+$(document).ready(
+function(e) {
+	setInterval(function() {
+                $("body").find('.animated').each(function() {
+                    if ($(this).hasClass('animated-paused')) {
+                        return;
+                    }
+                    var $nextFrame = advanceFrame(this, '.animated');
+                    if ($nextFrame.hasClass('animated-subframe')) {
+                        advanceFrame($nextFrame[0], '.animated-subframe');
+                    }
+                });
+            }, 2000);
+});
+var advanceFrame = function(parentElem, parentSelector) {
+                var curFrame = parentElem.querySelector(parentSelector + ' > .animated-active');
+                $(curFrame).removeClass('animated-active');
+                var $nextFrame = $(curFrame && curFrame.nextElementSibling || parentElem.firstElementChild);
+                return $nextFrame.addClass('animated-active');
+            };

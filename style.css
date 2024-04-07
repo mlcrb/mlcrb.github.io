@@ -197,6 +197,10 @@ body {
     vertical-align: middle;
 }
 
+.animated > *:not(.animated-active), .animated > .animated-subframe > *:not(.animated-active) {
+    display: none;
+}
+
 #ip {
     cursor: pointer;
     text-decoration: underline;
