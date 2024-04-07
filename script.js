@@ -45,7 +45,7 @@ $('.sprite').hover(function () {
       break;
 
     default:
-      content = name;
+      content = `<span style="color: #fff">${name}</span>`
       break;
   }
   $('#tooltip').html(content);
