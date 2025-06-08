@@ -38,11 +38,16 @@ body {
 }
 
 .header-container>*,
-.contents-header {
+.contents-header,
+.contents-item {
   color: #fff;
   text-shadow: 4px 4px 0 #3f3f3f;
   filter: dropshadow(color=#3f3f3f, offx=4, offy=4);
   margin: 10px;
+}
+
+.contents-header {
+  font-size: 20px;
 }
 
 .button-back {
