@@ -68,24 +68,19 @@ body {
   margin: auto;
   width: 75%;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
   grid-gap: 1em;
+}
+
+.grid-container-normal {
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .grid-container-more-columns {
-  margin: auto;
-  width: 75%;
-  display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
-  grid-gap: 1em;
 }
 
 .grid-container-less-columns {
-  margin: auto;
-  width: 75%;
-  display: grid;
   grid-template-columns: auto auto auto auto auto;
-  grid-gap: 1em;
 }
 
 .grid-container>div {
@@ -140,7 +135,7 @@ body {
   background: url(assets/images/arrow.png) no-repeat;
   width: 32px;
   height: 26px;
-  margin: 22px 4px 0;
+  margin: 22px 4px 0 !important;
 }
 
 .mcui-output {
@@ -148,7 +143,7 @@ body {
 }
 
 .mcui-output-special {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 
 .slot {

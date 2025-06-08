@@ -6,6 +6,9 @@
   <title>LokiCore reference book: anvil recipes</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="recipe.js"></script>
 </head>
 
 <body>
@@ -34,1091 +37,178 @@
     <h3>В наковальне</h3>
   </div>
   <br>
-  <div class="grid-container">
-    <div> <!-- Железные ботинки -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Заготовка под броню" style="background-position: -256px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железные ботинки" style="background-position: -96px -32px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железные поножи  -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Заготовка под броню" style="background-position: -256px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железные поножи" style="background-position: -224px -32px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железный нагрудник  -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Заготовка под броню" style="background-position: -256px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железный нагрудник" style="background-position: -128px -32px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железный шлем -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Заготовка под броню" style="background-position: -256px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железные шлем" style="background-position: -160px -32px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железная клёпка, 2 -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              <span class="slot-amount one-digit">2</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальная заготовка под броню -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальная заготовка под броню"
-                style="background-position: -224px -1120px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальной лист, 2 -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Булыжник" style="background-position: -320px -864px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              <span class="slot-amount one-digit">2</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Заготовка под ведро -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Заготовка под ведро" style="background-position: -160px -32px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальные сандалии -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальная заготовка под броню"
-                  style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальные сандалии" style="background-position: -160px -2464px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальные шорты -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальная заготовка под броню"
-                  style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальные шорты" style="background-position: -192px -2464px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальная броня -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальная заготовка под броню"
-                  style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальная броня" style="background-position: -224px -2464px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стальная каска -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальная заготовка под броню"
-                  style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стальная каска" style="background-position: -256px -2464px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Деконструктор -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Деконструктор" style="background-position: -128px -2464px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стеклостальной порошок, 6 -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Оранжевое стекло" style="background-position: -960px -736px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стеклостальной порошок" style="background-position: -768px -672px"></span>
-              <span class="slot-amount one-digit">6</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железные прутья, 4 -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная клёпка" style="background-position: -896px -1408px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железные прутья" style="background-position: -864px -864px"></span>
-              <span class="slot-amount one-digit">4</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Железная рельса -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железный слиток" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Камень" style="background-position: -224px -992px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Рельсы, 8 -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Доски из тропического дерева"
-                  style="background-position: -992px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Доски из тропического дерева"
-                  style="background-position: -992px -864px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Доски из тропического дерева"
-                  style="background-position: -992px -864px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Железная рельса" style="background-position: -224px -1120px"></span>
-              </span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Рельсы" style="background-position: -642px -928px"></span>
-              <span class="slot-amount one-digit">8</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Вагонетка -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Вагонетка" style="background-position: -352px -1248px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Ножницы
-				Стальные ножницы
-				Пальцы не совать -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Сталь" style="background-position: -224px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Ножницы Стальные ножницы Пальцы не совать"
-                style="background-position: -160px -1216px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Ковры -->
-      <span class="mcui crafting-table">
-        <span class="mcui-input">
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot">
-              <span class="slot-item">
-                <span class="sprite" name="Стальной лист" style="background-position: -384px -1120px"></span>
-              </span>
-            </span><span class="slot">
-              <span class="slot-item animated">
-                <span class="sprite animated-frame animated-frame-active" name="Белая шерсть"
-                  style="background-position: -0px -1536px"></span>
-                <span class="sprite animated-frame" name="Жёлтая шерсть"
-                  style="background-position: -32px -1536px"></span>
-                <span class="sprite animated-frame" name="Красная шерсть"
-                  style="background-position: -992px -1504px"></span>
-                <span class="sprite animated-frame" name="Фиолетовая шерсть"
-                  style="background-position: -960px -1504px"></span>
-                <span class="sprite animated-frame" name="Розовая шерсть"
-                  style="background-position: -928px -1504px"></span>
-                <span class="sprite animated-frame" name="Оранжевая шерсть"
-                  style="background-position: -896px -1504px"></span>
-                <span class="sprite animated-frame" name="Сиреневая шерсть"
-                  style="background-position: -864px -1504px"></span>
-                <span class="sprite animated-frame" name="Лаймовая шерсть"
-                  style="background-position: -832px -1504px"></span>
-                <span class="sprite animated-frame" name="Светло-серая шерсть"
-                  style="background-position: -800px -1504px"></span>
-                <span class="sprite animated-frame" name="Голубая шерсть"
-                  style="background-position: -768px -1504px"></span>
-                <span class="sprite animated-frame" name="Зелёная шерсть"
-                  style="background-position: -736px -1504px"></span>
-                <span class="sprite animated-frame" name="Сераяanimated-frame шерсть"
-                  style="background-position: -704px -1504px"></span>
-                <span class="sprite animated-frame" name="Бирюзовая шерсть"
-                  style="background-position: -672px -1504px"></span>
-                <span class="sprite animated-frame" name="Коричневая шерсть"
-                  style="background-position: -640px -1504px"></span>
-                <span class="sprite animated-frame" name="Синяя шерсть"
-                  style="background-position: -608px -1504px"></span>
-                <span class="sprite animated-frame" name="Чёрная шерсть"
-                  style="background-position: -576px -1504px"></span>
-              </span>
-            </span><span class="slot"></span>
-          </span>
-          <span class="mcui-row">
-            <span class="slot"></span><span class="slot"></span><span class="slot"></span>
-          </span>
-        </span>
-        <span class="mcui-arrow">
-          <br>
-        </span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item animated">
-              <span class="sprite animated-frame animated-frame-active" name="Белый ковёр"
-                style="background-position: -64px -1633px"></span>
-              <span class="sprite animated-frame" name="Жёлтый ковёр" style="background-position: -96px -1633px"></span>
-              <span class="sprite animated-frame" name="Красный ковёр"
-                style="background-position: -32px -1633px"></span>
-              <span class="sprite animated-frame" name="Фиолетовый ковёр"
-                style="background-position: -0px -1633px"></span>
-              <span class="sprite animated-frame" name="Розовый ковёр"
-                style="background-position: -992px -1601px"></span>
-              <span class="sprite animated-frame" name="Оранжевый ковёр"
-                style="background-position: -960px -1601px"></span>
-              <span class="sprite animated-frame" name="Сиреневый ковёр"
-                style="background-position: -928px -1601px"></span>
-              <span class="sprite animated-frame" name="Лаймовый ковёр"
-                style="background-position: -898px -1601px"></span>
-              <span class="sprite animated-frame" name="Светло-серый ковёр"
-                style="background-position: -866px -1601px"></span>
-              <span class="sprite animated-frame" name="Голубой ковёр"
-                style="background-position: -834px -1601px"></span>
-              <span class="sprite animated-frame" name="Зелёный ковёр"
-                style="background-position: -802px -1601px"></span>
-              <span class="sprite animated-frame" name="Серый ковёр" style="background-position: -770px -1601px"></span>
-              <span class="sprite animated-frame" name="Бирюзовый ковёр"
-                style="background-position: -738px -1601px"></span>
-              <span class="sprite animated-frame" name="Коричневый ковёр"
-                style="background-position: -706px -1601px"></span>
-              <span class="sprite animated-frame" name="Синий ковёр" style="background-position: -674px -1601px"></span>
-              <span class="sprite animated-frame" name="Чёрный ковёр"
-                style="background-position: -642px -1601px"></span>
-              <span class="slot-amount one-digit">8</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
+  <div class="grid-container grid-container-normal">
   </div>
   <br>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script>
+    craftingRecipe(
+      [["Железный слиток", null, "Железный слиток"],
+      ["Железный слиток", "Заготовка под броню", "Железный слиток"],
+      [null, null, null]],
+      "Железные ботинки",
+    );
+    craftingRecipe(
+      [["Железный слиток", "Железный слиток", "Железный слиток"],
+      ["Железный слиток", "Заготовка под броню", "Железный слиток"],
+      ["Железный слиток", null, "Железный слиток"]],
+      "Железные поножи",
+    );
+    craftingRecipe(
+      [["Железный слиток", "Заготовка под броню", "Железный слиток"],
+      ["Железный слиток", "Железный слиток", "Железный слиток"],
+      ["Железный слиток", "Железный слиток", "Железный слиток"]],
+      "Железный нагрудник",
+    );
+    craftingRecipe(
+      [["Железный слиток", "Железный слиток", "Железный слиток"],
+      ["Железный слиток", "Заготовка под броню", "Железный слиток"],
+      [null, null, null]],
+      "Железные шлем",
+    );
+    craftingRecipe(
+      [[null, "Булыжник", null],
+      [null, "Железный слиток", null],
+      [null, "Булыжник", null]],
+      "Железная клёпка",
+      2
+    );
+    craftingRecipe(
+      [["Железная клёпка", "Сталь", "Железная клёпка"],
+      ["Железная клёпка", "Железный слиток", "Железная клёпка"],
+      ["Железная клёпка", null, "Железная клёпка"]],
+      "Стальная заготовка под броню",
+    );
+    craftingRecipe(
+      [["Булыжник", "Булыжник", "Булыжник"],
+      ["Сталь", "Сталь", "Сталь"],
+      ["Булыжник", "Булыжник", "Булыжник"]],
+      "Стальной лист",
+      2
+    );
+    craftingRecipe(
+      [["Стальной лист", null, "Стальной лист"],
+      ["Стальной лист", null, "Стальной лист"],
+      [null, "Стальной лист", null]],
+      "Заготовка под ведро",
+    );
+    craftingRecipe(
+      [[null, "Стальная заготовка под броню", null],
+      ["Стальной лист", null, "Стальной лист"],
+      ["Стальной лист", null, "Стальной лист"]],
+      "Стальные сандалии",
+    );
+    craftingRecipe(
+      [["Стальной лист", "Стальная заготовка под броню", "Стальной лист"],
+      ["Стальной лист", null, "Стальной лист"],
+      ["Стальной лист", null, "Стальной лист"]],
+      "Стальные шорты",
+    );
+    craftingRecipe(
+      [["Стальной лист", null, "Стальной лист"],
+      ["Стальной лист", "Стальная заготовка под броню", "Стальной лист"],
+      ["Стальной лист", "Стальной лист", "Стальной лист"]],
+      "Стальная броня",
+    );
+    craftingRecipe(
+      [["Стальной лист", "Стальной лист", "Стальной лист"],
+      ["Стальной лист", "Стальная заготовка под броню", "Стальной лист"],
+      [null, null, null]],
+      "Стальная каска",
+    );
+    craftingRecipe(
+      [["Сталь", null, "Сталь"],
+      [null, "Сталь", null],
+      ["Сталь", null, "Сталь"]],
+      "Деконструктор",
+    );
+    craftingRecipe(
+      [["Сталь", "Сталь", null],
+      ["Сталь", "Оранжевое стекло", null],
+      [null, null, null]],
+      "Стеклостальной порошок",
+      6
+    );
+    craftingRecipe(
+      [["Железная клёпка", "Железный слиток", "Железная клёпка"],
+      ["Железный слиток", null, "Железный слиток"],
+      ["Железная клёпка", "Железный слиток", "Железная клёпка"]],
+      "Железные прутья",
+      4
+    );
+    craftingRecipe(
+      [["Камень", "Камень", "Камень"],
+      ["Железный слиток", "Железный слиток", "Железный слиток"],
+      ["Камень", "Камень", "Камень"]],
+      "Железная рельса",
+    );
+    craftingRecipe(
+      [["Железная рельса", "Железная рельса", "Железная рельса"],
+      ["Доски из тропического дерева", "Доски из тропического дерева", "Доски из тропического дерева"],
+      ["Железная рельса", "Железная рельса", "Железная рельса"]],
+      "Рельсы",
+      8
+    );
+    craftingRecipe(
+      [[null, "Стальной лист", null],
+      ["Стальной лист", "Стальной лист", "Стальной лист"],
+      [null, "Стальной лист", null]],
+      "Вагонетка",
+    );
+    craftingRecipe(
+      [[null, "Стальной лист", null],
+      ["Стальной лист", null, "Стальной лист"],
+      ["Сталь", "Стальной лист", null]],
+      "Ножницы Стальные ножницы Пальцы не совать"
+    );
+    craftingRecipe(
+      [[null, null, null],
+      ["Стальной лист", [
+        'Белая шерсть',
+        'Жёлтая шерсть',
+        'Красная шерсть',
+        'Фиолетовая шерсть',
+        'Розовая шерсть',
+        'Оранжевая шерсть',
+        'Сиреневая шерсть',
+        'Лаймовая шерсть',
+        'Светло-серая шерсть',
+        'Голубая шерсть',
+        'Зелёная шерсть',
+        'Серая шерсть',
+        'Бирюзовая шерсть',
+        'Коричневая шерсть',
+        'Синяя шерсть',
+        'Чёрная шерсть',
+      ], null],
+      [null, null, null]],
+      [
+        "Белый ковёр",
+        "Жёлтый ковёр",
+        "Красный ковёр",
+        "Фиолетовый ковёр",
+        "Розовый ковёр",
+        "Оранжевый ковёр",
+        "Сиреневый ковёр",
+        "Лаймовый ковёр",
+        "Светло-серый ковёр",
+        "Голубой ковёр",
+        "Зелёный ковёр",
+        "Серый ковёр",
+        "Бирюзовый ковёр",
+        "Коричневый ковёр",
+        "Синий ковёр",
+        "Чёрный ковёр",
+      ],
+      8
+    );
+    craftingRecipe(
+      [[null, "Булыжник", null],
+      [null, "Сырая говядина", null],
+      [null, null, null]],
+      "Красный краситель",
+      5
+    );
+  </script>
   <script src="script.js"></script>
 </body>
 
