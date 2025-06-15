@@ -37,6 +37,7 @@ $('.sprite').hover(function () {
       break;
     case 'Содалит':
     case 'Содалитовый кристалл':
+    case 'Содаловая кислота':
     case 'Капля энергии':
       content = `<span style="color: #5555ff">${name}</span>`
       break;
