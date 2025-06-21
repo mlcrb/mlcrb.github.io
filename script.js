@@ -18,6 +18,7 @@ $('.sprite').hover(function () {
       content = '<span style="color: #ffff55">Устройство</span><br><span style="color: #fff">Возраждатель</span>';
       break;
     case 'Смесь для выпечки пирога':
+    case 'Смесь для выпечки торта':
       content = `<span style="color: #55ffff">${name}</span>`;
       break;
     case 'Железийный топор Эффективность II':
