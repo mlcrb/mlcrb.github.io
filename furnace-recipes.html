@@ -6,6 +6,9 @@
   <title>LokiCore reference book: furnace recipes</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="recipe.js"></script>
 </head>
 
 <body>
@@ -34,256 +37,19 @@
     <h3>В печи</h3>
   </div>
   <br>
-  <div class="grid-container grid-container-more-columns">
-    <div> <!-- Древесный уголь -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Древесный уголь" style="background-position: -896px -1088px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Терракота -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Глина" style="background-position: -384px -960px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Терракота" style="background-position: -704px -960px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Стекло -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Песок" style="background-position: -96px -992px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Стекло" style="background-position: -768px -864px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Хлеб -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="¤ Хлебное тесто ¤" style="background-position: -864px -1088px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Хлеб" style="background-position: -704px -800px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Печёный картофель -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Картофель" style="background-position: -768px -640px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Печёный картофель" style="background-position: -384px -640px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Печенье, 8 -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Смесь для выпечки печенья" style="background-position: -512px -832px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Печенье" style="background-position: -992px -800px"></span>
-              <span class="slot-amount one-digit">8</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Тыквенный пирог, 2 -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Смесь для выпечки пирога" style="background-position: -512px -832px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Тыквенный пирог" style="background-position: -160px -832px"></span>
-              <span class="slot-amount one-digit">2</span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Свекольный суп -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Свекольный набор" style="background-position: -576px -1152px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Свекольный суп" style="background-position: -672px -1056px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-    <div> <!-- Тушёные грибы -->
-      <span class="mcui furnace">
-        <span class="mcui-input">
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Грибной набор" style="background-position: -576px -1152px"></span>
-            </span>
-          </span>
-          <span class="mcui-fuel">
-            <br>
-          </span>
-          <span class="slot">
-            <span class="slot-item">
-              <span class="sprite" name="Акация" style="background-position: -960px -992px"></span>
-            </span>
-          </span>
-        </span>
-        <span class="mcui-arrow"></span>
-        <span class="mcui-output">
-          <span class="slot slot-large">
-            <span class="slot-item">
-              <span class="sprite" name="Тушёные грибы" style="background-position: -96px -832px"></span>
-            </span>
-          </span>
-        </span>
-      </span>
-    </div>
-  </div>
+  <div class="grid-container grid-container-more-columns"></div>
   <br>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script>
+    smeltingRecipe("Акация", "Акация", "Древесный уголь");
+    smeltingRecipe("Глина", "Акация", "Терракота");
+    smeltingRecipe("Песок", "Акация", "Стекло");
+    smeltingRecipe("¤ Хлебное тесто ¤", "Акация", "Хлеб");
+    smeltingRecipe("Картофель", "Акация", "Печёный картофель");
+    smeltingRecipe("Смесь для выпечки печенья", "Акация", "Печенье", 8);
+    smeltingRecipe("Смесь для выпечки пирога", "Акация", "Тыквенный пирог", 2);
+    smeltingRecipe("Свекольный набор", "Акация", "Свекольный суп");
+    smeltingRecipe("Грибной набор", "Акация", "Тушёные грибы");
+  </script>
   <script src="script.js"></script>
 </body>
 
