@@ -15,14 +15,31 @@ $('.sprite').hover(function () {
       content = `<span style="color: #00aa00">${name}</span>`
       break;
     case 'Устройство Возраждатель':
-      content = '<span style="color: #ffff55">Устройство</span><br><span style="color: #fff">Возраждатель</span>';
+      content = `
+        <span style="color: #ffff55">Устройство</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Возраждатель</span>
+      `;
       break;
     case 'Смесь для выпечки пирога':
     case 'Смесь для выпечки торта':
       content = `<span style="color: #55ffff">${name}</span>`;
       break;
+    case 'Торт':
+      content = `
+        <span style="color: #ffffff">Торт</span>
+        <br style="line-height: 2">
+        <span style="color: #55ffff">Крайне сладкий</span>
+        <br>
+        <span style="color: #55ffff">+5 сахара</span>
+      `;
+      break;
     case 'Железийный топор Эффективность II':
-      content = '<span style="color: #fff">Железийный топор</span><br><span style="color: #aaa">Эффективность II</span>';
+      content = `
+        <span style="color: #ffffff">Железийный топор</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">Эффективность II</span>
+      `;
       break;
     case 'Смесь для выпечки печенья':
     case 'Заготовка под броню':
@@ -42,12 +59,18 @@ $('.sprite').hover(function () {
     case 'Капля энергии':
       content = `<span style="color: #5555ff">${name}</span>`
       break;
-    case 'Ножницы Стальные ножницы Пальцы не совать':
-      content = '<span style="color: #fff">Ножницы</span><br><span style="color: #aaa">Стальные ножницы</span><br><span style="color: #aaa">Пальцы не совать</span>';
+    case 'Ножницы':
+      content = `
+        <span style="color: #ffffff">Ножницы</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">Стальные ножницы</span>
+        <br>
+        <span style="color: #aaaaaa">Пальцы не совать</span>
+      `;
       break;
 
     default:
-      content = `<span style="color: #fff">${name}</span>`
+      content = `<span style="color: #ffffff">${name}</span>`
       break;
   }
   $('#tooltip').html(content);
