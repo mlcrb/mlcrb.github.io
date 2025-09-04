@@ -48,6 +48,7 @@ $('.sprite').hover(function () {
     case 'Средний энергоосколок':
     case 'Свекольный набор':
     case 'Грибной набор':
+    case 'Литая заготовка под броню':
       content = `<span style="color: #55ff55">${name}</span>`
       break;
     case 'Деконструктор':
@@ -84,11 +85,20 @@ $('.sprite').hover(function () {
       break;
      case 'Литой слиток':
      case 'Кристалл огня':
+     case 'Ботинки с литыми вставками':
+     case 'Крапивозащитные штаны':
+     case 'Огнеупорный литой нагрудник':
+     case 'Чистый литой шлем':
       content = `<span style="color: #ffaa00">${name}</span>`
      break;
      case 'Очищенный слиток лита':
      case 'Очищенный лит':
      case 'Литовое стекло':
+     case 'Литой шлем':
+     case 'Литой нагрудник':
+     case 'Литые штаны':
+     case 'Литые ботинки':
+     case 'Пластина лита':
       content = `<span style="color: #ffff55">${name}</span>`
      break;
      case 'Красный пищальник':
@@ -96,6 +106,38 @@ $('.sprite').hover(function () {
      case 'Красно-пищальниковый полублок':
       content = `<span style="color: #ff5555">${name}</span>`
      break;
+     case 'Камни с литом':
+      content = `<span style="color: #555555">${name}</span>`
+     break;
+     case 'Булочка Без наполнителя':
+      content = `
+        <span style="color: #ffffff">Булочка</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">Без наполнителя</span>
+      `;
+     break;
+     case 'Булочка Со слабой защитой от огня':
+      content = `
+        <span style="color: #ffffff">Булочка</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">Со слабой защитой от огня</span>
+      `;
+     break;
+     case 'Булочка С обычной защитой от огня':
+      content = `
+        <span style="color: #ffffff">Булочка</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">Со обычной защитой от огня</span>
+      `;
+     break;
+     case 'Булочка С расширенной защитой от огня':
+      content = `
+        <span style="color: #ffffff">Булочка</span>
+        <br style="line-height: 2">
+        <span style="color: #aaaaaa">С расширенной защитой от огня</span>
+      `;
+     break;
+      
 
     default:
       content = `<span style="color: #ffffff">${name}</span>`
