@@ -68,6 +68,34 @@ $('.sprite').hover(function () {
         <span style="color: #aaaaaa">Пальцы не совать</span>
       `;
       break;
+     case 'Пыль лита Мелкий порошок лита':
+      content = `
+        <span style="color: #ffff55">Пыль лита</span>
+        <br style="line-height: 2">
+        <span style="color: #ffaa00">Мелкий порошок лита</span>
+      `;
+      break;
+     case 'Кристалл лита Небольшой кристалл лита':
+      content = `
+        <span style="color: #ffff55">Кристалл лита</span>
+        <br style="line-height: 2">
+        <span style="color: #ffaa00">Небольшой кристалл лита</span>
+      `;
+      break;
+     case 'Литой слиток':
+     case 'Кристалл огня':
+      content = `<span style="color: #ffaa00">${name}</span>`
+     break;
+     case 'Очищенный слиток лита':
+     case 'Очищенный лит':
+     case 'Литовое стекло':
+      content = `<span style="color: #ffff55">${name}</span>`
+     break;
+     case 'Красный пищальник':
+     case 'Красно-пищальниковые ступеньки':
+     case 'Красно-пищальниковый полублок':
+      content = `<span style="color: #ff5555">${name}</span>`
+     break;
 
     default:
       content = `<span style="color: #ffffff">${name}</span>`
