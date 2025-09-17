@@ -49,6 +49,7 @@ $('.sprite').hover(function () {
     case 'Свекольный набор':
     case 'Грибной набор':
     case 'Литая заготовка под броню':
+    case 'Укреплённый булыжник':
       content = `<span style="color: #55ff55">${name}</span>`
       break;
     case 'Деконструктор':
@@ -99,6 +100,7 @@ $('.sprite').hover(function () {
      case 'Литые штаны':
      case 'Литые ботинки':
      case 'Пластина лита':
+     case 'Литовое стекло':
       content = `<span style="color: #ffff55">${name}</span>`
      break;
      case 'Красный пищальник':
