@@ -139,6 +139,33 @@ $('.sprite').hover(function () {
         <span style="color: #aaaaaa">С расширенной защитой от огня</span>
       `;
      break;
+     case 'Ядро роста Шерсть':
+      content = `
+        <span style="color: #ffaa00">Ядро роста</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Специализация:</span>
+        <br>
+        <span style="color: #55ff55">Шерсть</span>
+      `;
+      break;
+      case 'Ядро роста Озеленение':
+      content = `
+        <span style="color: #ffaa00">Ядро роста</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Специализация:</span>
+        <br>
+        <span style="color: #55ff55">Озеленение</span>
+      `;
+      break;
+      case 'Ядро роста Плетение':
+      content = `
+        <span style="color: #ffaa00">Ядро роста</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Специализация:</span>
+        <br>
+        <span style="color: #55ff55">Плетение</span>
+      `;
+      break;
       
 
     default:
