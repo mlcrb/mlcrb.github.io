@@ -101,6 +101,7 @@ $('.sprite').hover(function () {
      case 'Литые ботинки':
      case 'Пластина лита':
      case 'Литовое стекло':
+     case 'Литный блок':
       content = `<span style="color: #ffff55">${name}</span>`
      break;
      case 'Красный пищальник':
