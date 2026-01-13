@@ -70,6 +70,33 @@ $('.sprite').hover(function () {
         <span style="color: #aaaaaa">Пальцы не совать</span>
       `;
       break;
+      case 'Сырая керамика голубая':
+      content = `
+        <span style="color: #55ff55">Сырая керамика</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Покрыта жидкой глазурью</span>
+        <br>
+        <span style="color: #55ffff">Голубая</span>
+      `;
+      break;
+      case 'Сырая керамика лаймовая':
+      content = `
+        <span style="color: #55ff55">Сырая керамика</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Покрыта жидкой глазурью</span>
+        <br>
+        <span style="color: #55ff55">Лаймовая</span>
+      `;
+      break;
+      case 'Сырая керамика светло-серая':
+      content = `
+        <span style="color: #55ff55">Сырая керамика</span>
+        <br style="line-height: 2">
+        <span style="color: #ffffff">Покрыта жидкой глазурью</span>
+        <br>
+        <span style="color: #aaaaaa">Светло-серая</span>
+      `;
+      break;
      case 'Пыль лита Мелкий порошок лита':
       content = `
         <span style="color: #ffff55">Пыль лита</span>
