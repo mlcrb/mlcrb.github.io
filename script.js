@@ -50,6 +50,7 @@ $('.sprite').hover(function () {
     case 'Грибной набор':
     case 'Литая заготовка под броню':
     case 'Укреплённый булыжник':
+    case 'Предметное логово':
       content = `<span style="color: #55ff55">${name}</span>`
       break;
     case 'Деконструктор':
