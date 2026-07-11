@@ -348,7 +348,6 @@ function craftingRecipe(inputMatrix, outputItem, outputAmount) {
 }
 
 function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
-  // 1. Логика обработки входящего предмета (как в верстаке)
   let inputHtml = [];
   if (typeof inputItem === 'string') {
     inputHtml.push(itemSpriteHtml(inputItem));
@@ -362,7 +361,6 @@ function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
     inputHtml.push('</span>');
   }
 
-  // 2. Логика обработки топлива
   let fuelHtml = [];
   if (typeof fuelItem === 'string') {
     fuelHtml.push(itemSpriteHtml(fuelItem));
