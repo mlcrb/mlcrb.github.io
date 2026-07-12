@@ -80,13 +80,16 @@ const SPRITESHEET_POSITIONS = new Map([
   ['Булыжная плита', [11, 27]],
   ['Булыжник', [10, 27]],
   ['Булыжные ступеньки', [12, 27]],
+  ['Бумага', [12, 35]],
   ['Вагонетка', [11, 39]],
   ['Ведро', [27, 20]],
   ['Верстак', [24, 38]],
   ['Весло', [1, 77]],
   ['Гладкий гранит', [12, 28]],
   ['Глина', [12, 30]],
+  ['Голубой василёк', [0, 32]],
   ['Гранит', [19, 30]],
+  ['Гравий', [21, 30]],
   ['Грибной набор', [18, 36]],
   ['Деконструктор', [4, 77]],
   ['Деревянный меч', [12, 40]],
@@ -141,9 +144,12 @@ const SPRITESHEET_POSITIONS = new Map([
   ['Кремень', [3, 35]],
   ['Лоза', [17, 33]],
   ['Лук', [31, 39]],
+  ['Лук-батун', [31, 31]],
   ['Люк', [29, 29]],
+  ['Мак', [2, 33]],
   ['Малый энергоосколок', [15, 35]],
   ['Миска', [18, 36]],
+  ['Мёртвый куст', [14, 32]],
   ['Нити лозы', [16, 21]],
   ['Нить', [20, 35]],
   ['Ножницы', [5, 38]],
@@ -164,6 +170,7 @@ const SPRITESHEET_POSITIONS = new Map([
   ['Пустой примитивный кристалл', [14, 35]],
   ['Пшеница', [17, 26]],
   ['Рельсы', [20, 29]],
+  ['Рецепт', [24, 44]],
   ['Рукоять лука', [19, 35]],
   ['Саженец тропического дерева', [19, 32]],
   ['Сахар', [16, 26]],
@@ -172,6 +179,7 @@ const SPRITESHEET_POSITIONS = new Map([
   ['Свекольный суп', [21, 33]],
   ['Свёкла', [19, 33]],
   ['Семена пшеницы', [10, 33]],
+  ['Синяя орхидея', [4, 32]],
   ['Смесь для выпечки печенья', [16, 26]],
   ['Смесь для выпечки пирога', [16, 26]],
   ['Смесь для выпечки торта', [16, 26]],
@@ -340,13 +348,54 @@ function craftingRecipe(inputMatrix, outputItem, outputAmount) {
 }
 
 function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
+  let inputHtml = [];
+  if (typeof inputItem === 'string') {
+    inputHtml.push(itemSpriteHtml(inputItem));
+  } else if (inputItem instanceof Array) {
+    inputHtml.push('<span class="slot-item animated">');
+    inputItem.forEach(function (frame, i) {
+      let additionalClasses = ['animated-frame'];
+      if (i == 0) additionalClasses.push('animated-frame-active');
+      inputHtml.push(itemSpriteHtml(frame, additionalClasses));
+    });
+    inputHtml.push('</span>');
+  }
+
+  let fuelHtml = [];
+  if (typeof fuelItem === 'string') {
+    fuelHtml.push(itemSpriteHtml(fuelItem));
+  } else if (fuelItem instanceof Array) {
+    fuelHtml.push('<span class="slot-item animated">');
+    fuelItem.forEach(function (frame, i) {
+      let additionalClasses = ['animated-frame'];
+      if (i == 0) additionalClasses.push('animated-frame-active');
+      fuelHtml.push(itemSpriteHtml(frame, additionalClasses));
+    });
+    fuelHtml.push('</span>');
+  }
+
+  let outputHtml = [];
+  if (typeof outputItem === 'string') {
+    outputHtml.push(itemSpriteHtml(outputItem));
+  } else if (outputItem instanceof Array) {
+    outputHtml.push('<span class="slot-item animated">');
+    outputItem.forEach(function (frame, i) {
+      let additionalClasses = ['animated-frame'];
+      if (i == 0) additionalClasses.push('animated-frame-active');
+      outputHtml.push(itemSpriteHtml(frame, additionalClasses));
+    });
+    outputHtml.push('</span>');
+  }
+  if (outputAmount) {
+    outputHtml.push(itemAmountHtml(outputAmount));
+  }
   return `
     <div>
       <span class="mcui furnace">
         <span class="mcui-input">
           <span class="slot">
             <span class="slot-item">
-              ${itemSpriteHtml(inputItem)}
+              ${inputHtml.join('')}
             </span>
           </span>
           <span class="mcui-fuel">
@@ -354,7 +403,7 @@ function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
           </span>
           <span class="slot">
             <span class="slot-item">
-              ${itemSpriteHtml(fuelItem)}
+              ${fuelHtml.join('')}
             </span>
           </span>
         </span>
@@ -362,8 +411,7 @@ function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
         <span class="mcui-output">
           <span class="slot slot-large">
             <span class="slot-item">
-              ${itemSpriteHtml(outputItem)}
-              ${outputAmount ? itemAmountHtml(outputAmount) : ''}
+              ${outputHtml.join('')}
             </span>
           </span>
         </span>
@@ -371,7 +419,6 @@ function smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount) {
     </div>
   `;
 }
-
 function smeltingRecipe(inputItem, fuelItem, outputItem, outputAmount) {
   $('.grid-container').append(smeltingRecipeHtml(inputItem, fuelItem, outputItem, outputAmount));
 }

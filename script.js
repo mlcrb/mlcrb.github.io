@@ -132,6 +132,9 @@ $('.sprite').hover(function () {
      case 'Литный блок':
       content = `<span style="color: #ffff55">${name}</span>`
      break;
+     case 'Рецепт':
+      content = `<span style="color: #ff55ff">${name}</span>`
+     break;
      case 'Красный пищальник':
      case 'Красно-пищальниковые ступеньки':
      case 'Красно-пищальниковый полублок':
