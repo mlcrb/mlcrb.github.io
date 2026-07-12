@@ -17,16 +17,16 @@ body {
 }
 
 .contents {
-  position: absolute;
   background-image: url(assets/images/dirt-background.png);
-  max-width: 400px;
-  min-width: 200px;
-  text-align: center;
-  padding: 10px 0 10px 0;
   border: #fff 2px solid;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 20px;
+  width: 90%;
+  max-width: 750px; 
+  min-width: 300px;
+  border-radius: 0; 
+  position: relative;
+  margin: 30px auto 30px auto; 
 }
 
 .link {
@@ -85,6 +85,48 @@ body {
 
 .grid-container>div {
   margin: auto;
+  text-align: center;
+}
+
+.menu-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.menu-grid-container .grid-column {
+  text-align: center;
+}
+
+.menu-grid-container .contents-header {
+  font-weight: bold;
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+  white-space: normal;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-grid-container .contents-item {
+  margin: 8px 0;
+  white-space: nowrap;
+}
+
+.contents-footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  width: 100%;
+}
+
+.layout-copyright {
+  display: block;
+  width: 100%;
   text-align: center;
 }
 
